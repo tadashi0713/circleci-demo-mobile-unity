@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Clouds
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 1
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: iPhone
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 748b85829b08440bdbdb3ba538b96639, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: cb0eb1866f7a1364a9e5dab758ba12ea, type: 3}
+  - {fileID: 21300000, guid: a5a035b6f5a4d51439bdfa0062e175b5, type: 3}
+  - {fileID: 21300000, guid: 5bcfde6b5e2b1c7439d99745dc424400, type: 3}
+  - {fileID: 21300000, guid: ef247aeb737abe34786e0e6d6b724a03, type: 3}
+  - {fileID: 21300000, guid: afbae40ca1defa441b2b74096a0bd3aa, type: 3}
+  - {fileID: 21300000, guid: 79bcafbe32e3b1b4bb0a3f4b9978b502, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Sprite_Cloud_Horizon
+  - Sprite_Cloud_9
+  - Sprite_Cloud_7
+  - Sprite_Cloud_3
+  - Sprite_Cloud_1
+  - Sprite_Cloud_8
+  m_RenderDataMap: {}
+  m_Tag: Clouds
+  m_IsVariant: 0

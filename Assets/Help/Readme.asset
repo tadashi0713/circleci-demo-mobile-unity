@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf7219bab7fe46a1ad266029b2fee19, type: 3}
+  m_Name: Readme
+  m_EditorClassIdentifier: 
+  icon: {fileID: 2800000, guid: bfd3f357eb4a64d5faf8f3346200600e, type: 3}
+  title: 'Lost Crypt: 2D Sample Project'
+  sections:
+  - heading: What is Lost Crypt?
+    text: 'Lost Crypt is a 2D sample project that aims to show you how you can solve
+      common visual challenges within the context of a hi-end 2D game production
+      with our native set of 2D tools. '
+    linkText: Read the announcement blog post
+    url: https://blogs.unity3d.com/2019/12/18/download-our-new-2d-sample-project-lost-crypt/
+  - heading: 'Webinar: New 2D Graphics Features'
+    text: Our Global evangelist Andy Touch gave a live webinar on how we used 2D
+      lights, shaders and post-processing in this project in detail during this presentation.
+    linkText: Watch the webinar
+    url: https://www.youtube.com/watch?v=vRPW3H4X9PE
+  - heading: 'Presentation: Bringing 2D Characters to life with 2D Animation'
+    text: "During Unite Copenhagen 19, the Games evangelist Arturo Nu\xF1ez shows
+      us the benefits and workflow of the 2D Animation toolset to create 2D skeletal
+      animation like the one used in the Lost Crypt."
+    linkText: Watch the presentation
+    url: https://www.youtube.com/watch?v=vap04-Py9QM
+  - heading: 'Presentation overview: The evolution of 2D game tools'
+    text: "Rus Scammell, 2D\u2019s Product Manager, will give you an overview of
+      how Unity\u2019s 2D toolset has evolved to include a host of powerful graphics
+      features such as dynamic lighting, materials, shaders, and post-processing."
+    linkText: Watch the presentation
+    url: https://www.youtube.com/watch?v=-wms7mDShag
+  - heading: Got feedback?
+    text: Please reach us about Lost Crypt or any 2D tools in the forum
+    linkText: Forum Thread
+    url: https://forum.unity.com/forums/2d.53/
+  loadedLayout: 1
