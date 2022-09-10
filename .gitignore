@@ -43,4 +43,6 @@ sysinfo.txt
 *_BurstDebugInformation_DoNotShip/
 
 # iOS
-ios/
+
+# fastlane
+vendor

@@ -1,0 +1,12 @@
+platform :ios do
+  lane :beta do
+    puts "iOS"
+  end
+end
+
+platform :android do
+  lane :beta do
+    puts "Android"
+  end
+end
+
