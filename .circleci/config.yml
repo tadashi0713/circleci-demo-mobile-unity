@@ -1,6 +1,7 @@
 version: 2.1
 
 orbs:
+  ruby: circleci/ruby@1.8.0
   unity: game-ci/unity@1.1.0
 
 jobs:
@@ -17,6 +18,7 @@ jobs:
           build-target: Android
           compress: false
           store-artifacts: false
+      - ruby/install-deps
 
   build-ios:
     executor:
@@ -31,6 +33,10 @@ jobs:
           build-target: iOS
           compress: false
           store-artifacts: false
+    - persist_to_workspace:
+        root: .
+        paths:
+          - Builds/iOS/iOS
 
 workflows:
   build-unity-project:
