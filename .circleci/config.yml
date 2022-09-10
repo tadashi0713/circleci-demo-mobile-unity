@@ -20,12 +20,29 @@ jobs:
           store-artifacts: false
       - ruby/install-deps
 
+  # build-ios:
+  #   executor:
+  #     name: unity/ubuntu
+  #     editor_version: 2021.3.9f1
+  #     resource_class: xlarge
+  #     target_platform: ios
+  #   steps:
+  #     - checkout
+  #     - unity/prepare-env
+  #     - unity/build:
+  #         build-target: iOS
+  #         compress: false
+  #         store-artifacts: false
+  #     - persist_to_workspace:
+  #         root: .
+  #         paths:
+  #           - Builds/iOS/iOS
+
   build-ios:
     executor:
-      name: unity/ubuntu
+      name: unity/macos
       editor_version: 2021.3.9f1
-      resource_class: xlarge
-      target_platform: ios
+      resource_class: large
     steps:
       - checkout
       - unity/prepare-env
@@ -33,10 +50,7 @@ jobs:
           build-target: iOS
           compress: false
           store-artifacts: false
-      - persist_to_workspace:
-          root: .
-          paths:
-            - Builds/iOS/iOS
+      - ruby/install-deps
 
 workflows:
   build-unity-project:
