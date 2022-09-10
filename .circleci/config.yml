@@ -12,6 +12,7 @@ jobs:
       target_platform: android
     steps:
       - checkout
+      - unity/prepare-env
       - unity/build:
           build-target: Android
 
@@ -23,6 +24,7 @@ jobs:
       target_platform: ios
     steps:
       - checkout
+      - unity/prepare-env
       - unity/build:
           build-target: iOS
 
@@ -33,12 +35,12 @@ workflows:
           context: unity
       - build-ios:
           context: unity
-      - unity/build:
-          name: build-android-job
-          build-target: Android
-          context: unity
-          executor:
-            editor_version: 2021.3.9f1
-            name: unity/ubuntu
-            resource_class: xlarge
-            target_platform: android
+      # - unity/build:
+      #     name: build-android-job
+      #     build-target: Android
+      #     context: unity
+      #     executor:
+      #       editor_version: 2021.3.9f1
+      #       name: unity/ubuntu
+      #       resource_class: xlarge
+      #       target_platform: android
