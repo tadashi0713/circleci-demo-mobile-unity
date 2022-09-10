@@ -9,7 +9,7 @@ jobs:
     executor:
       name: unity/ubuntu
       editor_version: 2021.3.9f1
-      resource_class: xlarge
+      resource_class: 2xlarge
       target_platform: android
     steps:
       - checkout
@@ -18,31 +18,17 @@ jobs:
           build-target: Android
           compress: false
           store-artifacts: false
-      - ruby/install-deps
+      - persist_to_workspace:
+          root: .
+          paths:
+            - Builds/Android/Android
 
-  # build-ios:
-  #   executor:
-  #     name: unity/ubuntu
-  #     editor_version: 2021.3.9f1
-  #     resource_class: xlarge
-  #     target_platform: ios
-  #   steps:
-  #     - checkout
-  #     - unity/prepare-env
-  #     - unity/build:
-  #         build-target: iOS
-  #         compress: false
-  #         store-artifacts: false
-  #     - persist_to_workspace:
-  #         root: .
-  #         paths:
-  #           - Builds/iOS/iOS
-
-  build-ios:
+  export-ios:
     executor:
-      name: unity/macos
+      name: unity/ubuntu
       editor_version: 2021.3.9f1
-      resource_class: large
+      resource_class: xlarge
+      target_platform: ios
     steps:
       - checkout
       - unity/prepare-env
@@ -50,6 +36,19 @@ jobs:
           build-target: iOS
           compress: false
           store-artifacts: false
+      - persist_to_workspace:
+          root: .
+          paths:
+            - Builds/iOS/iOS
+
+  build-and-beta-ios:
+    macos:
+      xcode: 13.4.1
+    resource_class: large
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
       - ruby/install-deps
 
 workflows:
@@ -57,5 +56,8 @@ workflows:
     jobs:
       - build-android:
           context: unity
-      - build-ios:
+      - export-ios:
           context: unity
+      - build-and-beta-ios:
+          requires:
+            - export-ios
