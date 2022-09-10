@@ -33,10 +33,10 @@ jobs:
           build-target: iOS
           compress: false
           store-artifacts: false
-    - persist_to_workspace:
-        root: .
-        paths:
-          - Builds/iOS/iOS
+      - persist_to_workspace:
+          root: .
+          paths:
+            - Builds/iOS/iOS
 
 workflows:
   build-unity-project:
