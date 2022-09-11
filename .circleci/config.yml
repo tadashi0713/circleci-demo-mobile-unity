@@ -23,6 +23,15 @@ jobs:
           paths:
             - Builds/Android
 
+  beta-android:
+    docker:
+      - image: cimg/ruby:3.1.2
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - ruby/install-deps
+
   export-ios:
     executor:
       name: unity/ubuntu
@@ -56,6 +65,9 @@ workflows:
     jobs:
       - build-android:
           context: unity
+      - beta-android:
+          requires:
+            - build-android
       - export-ios:
           context: unity
       - build-and-beta-ios:
