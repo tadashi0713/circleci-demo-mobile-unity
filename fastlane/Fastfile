@@ -6,7 +6,7 @@ platform :ios do
   lane :beta do
     match(type: "adhoc")
     build_app(
-      xcodeproj: "Builds/iOS/iOS/Unity-iPhone.xcodeproj"
+      xcodeproj: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
       scheme: "Unity-iPhone",
       configuration: "Debug",
       export_method: "ad-hoc"
