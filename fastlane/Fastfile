@@ -1,15 +1,18 @@
 platform :ios do
+  before_all do
+    setup_circle_ci
+  end
+
   lane :beta do
-    puts "iOS"
+    match(type: "adhoc")
   end
 end
 
 platform :android do
   lane :beta do
     firebase_app_distribution(
-      app: "1:922310892459:android:ccd085d58016f8433e90ee",
+      app: "1:922310892459:android:8d4d80f5c33fc5163e90ee",
       apk_path: "Builds/Android/Android.apk",
     )
   end
 end
-

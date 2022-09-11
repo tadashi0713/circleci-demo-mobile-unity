@@ -60,6 +60,7 @@ jobs:
       - attach_workspace:
           at: .
       - ruby/install-deps
+      - run: bundle exec fastlane ios beta
 
 workflows:
   build-unity-project:
