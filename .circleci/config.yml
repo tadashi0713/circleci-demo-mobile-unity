@@ -31,6 +31,7 @@ jobs:
       - attach_workspace:
           at: .
       - ruby/install-deps
+      - run: bundle exec fastlane android beta
 
   export-ios:
     executor:
@@ -68,8 +69,12 @@ workflows:
       - beta-android:
           requires:
             - build-android
+          context:
+            - mobile
       - export-ios:
           context: unity
       - build-and-beta-ios:
           requires:
             - export-ios
+          context:
+            - mobile

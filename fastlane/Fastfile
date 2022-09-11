@@ -6,7 +6,10 @@ end
 
 platform :android do
   lane :beta do
-    puts "Android"
+    firebase_app_distribution(
+      app: "1:922310892459:android:ccd085d58016f8433e90ee",
+      apk_path: "Builds/Android/Android.apk",
+    )
   end
 end
 
