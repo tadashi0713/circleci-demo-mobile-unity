@@ -163,6 +163,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.tadashi0713.CircleCIUnityMobileDemo
     Standalone: com.UnityTechnologies.LostCrypt
+    iPhone: com.tadashi0713.CircleCIUnityMobileDemo
   buildNumber:
     Standalone: 0
     iPhone: 0
