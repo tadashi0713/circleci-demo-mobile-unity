@@ -27,7 +27,7 @@ platform :ios do
       configuration: "Debug",
       export_method: "ad-hoc",
       xcargs: "-allowProvisioningUpdates",
-      build_options[:export_options] = {
+      export_options: {
         compileBitcode: false
       }
     )
