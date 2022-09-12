@@ -5,6 +5,22 @@ platform :ios do
 
   lane :beta do
     match(type: "adhoc")
+
+    update_code_signing_settings(
+      use_automatic_signing: true,
+      path: "Builds/iOS/iOS/Unity-iPhone.xcodeproj"
+    )
+
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      team_id: ENV["sigh_com.tadashi0713.CircleCIUnityMobileDemo_adhoc_team-id"],
+      code_sign_identity: 'iPhone Distribution',
+      targets: 'Unity-iPhone',
+      path: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
+      profile_name: ENV["sigh_com.tadashi0713.CircleCIUnityMobileDemo_adhoc_profile-name"],
+      profile_uuid: ENV["sigh_com.tadashi0713.CircleCIUnityMobileDemo_adh"]
+    )
+
     build_app(
       project: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
       scheme: "Unity-iPhone",
