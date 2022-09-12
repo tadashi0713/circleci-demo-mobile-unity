@@ -30,7 +30,8 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-      - ruby/install-deps
+      - ruby/install-deps:
+          key: android
       - run: bundle exec fastlane android beta
 
   export-ios:
@@ -59,7 +60,8 @@ jobs:
       - checkout
       - attach_workspace:
           at: .
-      - ruby/install-deps
+      - ruby/install-deps:
+          key: ios
       - run: bundle exec fastlane ios beta
 
 workflows:

@@ -4,6 +4,14 @@ platform :ios do
   end
 
   lane :beta do
+    update_info_plist(
+      xcodeproj: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
+      plist_path: 'Info.plist',
+      block: proc do |plist|
+        plist['ITSAppUsesNonExemptEncryption'] = false
+      end
+    )
+
     match(type: "adhoc")
 
     update_code_signing_settings(
