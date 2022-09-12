@@ -8,7 +8,9 @@ platform :ios do
     build_app(
       project: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
       scheme: "Unity-iPhone",
-      export_method: "ad-hoc"
+      configuration: "Debug",
+      export_method: "ad-hoc",
+      xcargs: "-allowProvisioningUpdates"
     )
   end
 end
