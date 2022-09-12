@@ -18,7 +18,7 @@ platform :ios do
       targets: 'Unity-iPhone',
       path: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
       profile_name: ENV["sigh_com.tadashi0713.CircleCIUnityMobileDemo_adhoc_profile-name"],
-      profile_uuid: ENV["sigh_com.tadashi0713.CircleCIUnityMobileDemo_adh"]
+      profile_uuid: ENV["sigh_com.tadashi0713.CircleCIUnityMobileDemo_adhoc"]
     )
 
     build_app(
