@@ -8,7 +8,6 @@ platform :ios do
     build_app(
       project: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
       scheme: "Unity-iPhone",
-      configuration: "Debug",
       export_method: "ad-hoc"
     )
   end
