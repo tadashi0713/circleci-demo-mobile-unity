@@ -4,14 +4,6 @@ platform :ios do
   end
 
   lane :beta do
-    update_info_plist(
-      xcodeproj: "Builds/iOS/iOS/Unity-iPhone.xcodeproj",
-      plist_path: 'Info.plist',
-      block: proc do |plist|
-        plist['ITSAppUsesNonExemptEncryption'] = false
-      end
-    )
-
     match(type: "adhoc")
 
     update_code_signing_settings(
@@ -34,7 +26,8 @@ platform :ios do
       scheme: "Unity-iPhone",
       configuration: "Debug",
       export_method: "ad-hoc",
-      xcargs: "-allowProvisioningUpdates"
+      xcargs: "-allowProvisioningUpdates",
+      skip_profile_detection: true
     )
   end
 end
