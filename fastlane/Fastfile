@@ -31,6 +31,10 @@ platform :ios do
         compileBitcode: false
       }
     )
+
+    firebase_app_distribution(
+      app: "1:922310892459:ios:9cda19cb6e19a36a3e90ee"
+    )
   end
 end
 
