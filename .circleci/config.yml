@@ -25,7 +25,7 @@ jobs:
 
   beta-android:
     docker:
-      - image: cimg/ruby:3.2.1
+      - image: cimg/ruby:3.2.2
     steps:
       - checkout
       - attach_workspace:
