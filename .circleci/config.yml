@@ -8,7 +8,7 @@ jobs:
   build-android:
     executor:
       name: unity/ubuntu
-      editor_version: 2021.3.9f1
+      editor_version: 2021.3.26f1
       resource_class: xlarge
       target_platform: android
     steps:
@@ -24,8 +24,9 @@ jobs:
             - Builds/Android
 
   beta-android:
-    docker:
-      - image: cimg/ruby:3.2.1
+    executor:
+      name: ruby/default
+      tag: 3.0.5
     steps:
       - checkout
       - attach_workspace:
@@ -37,7 +38,7 @@ jobs:
   export-ios:
     executor:
       name: unity/ubuntu
-      editor_version: 2021.3.9f1
+      editor_version: 2021.3.26f1
       resource_class: xlarge
       target_platform: ios
     steps:
@@ -54,8 +55,8 @@ jobs:
 
   build-and-beta-ios:
     macos:
-      xcode: 13.4.1
-    resource_class: large
+      xcode: 14.2.0
+    resource_class: macos.m1.large.gen1
     steps:
       - checkout
       - attach_workspace:
