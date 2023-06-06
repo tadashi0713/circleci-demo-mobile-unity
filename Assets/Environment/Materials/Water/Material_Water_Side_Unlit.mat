@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,13 +10,18 @@ Material:
   m_Name: Material_Water_Side_Unlit
   m_Shader: {fileID: -6465566751694194690, guid: e996c1cdac5d8f6449a8619c351dc439,
     type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -32,6 +37,7 @@ Material:
         m_Texture: {fileID: 2800000, guid: f52fb4c3d7a8ec94d94ffa23509e53bd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - Vector1_1098D7FE: 2.2
     - Vector1_128C7CD1: 0.71
@@ -49,3 +55,17 @@ Material:
     - Color_DD84C9EF: {r: 0.9575472, g: 0.98006004, b: 1, a: 1}
     - Vector2_2F7B3F9F: {r: 1, g: 1, b: 0, a: 0}
     - Vector2_E537B32A: {r: 0.44, g: 2.06, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &9179389682567938201
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

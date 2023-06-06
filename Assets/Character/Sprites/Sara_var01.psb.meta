@@ -26,11 +26,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -93,7 +95,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData: []
@@ -410,7 +411,6 @@ ScriptedImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 856, y: 604}
     spritePosition: {x: 935, y: 1448}
   - name: forearm_R
@@ -875,7 +875,6 @@ ScriptedImporter:
     - {x: 35, y: 36}
     - {x: 36, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 3349}
     spritePosition: {x: 760, y: 873}
   - name: arm_R
@@ -1265,7 +1264,6 @@ ScriptedImporter:
     - {x: 29, y: 30}
     - {x: 30, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 604}
     spritePosition: {x: 744, y: 1157}
   - name: shirt_A
@@ -1651,7 +1649,6 @@ ScriptedImporter:
     - {x: 27, y: 28}
     - {x: 28, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 1292}
     spritePosition: {x: 863, y: 1130}
   - name: shirt_B
@@ -2015,7 +2012,6 @@ ScriptedImporter:
     - {x: 25, y: 26}
     - {x: 26, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 1621}
     spritePosition: {x: 863, y: 1130}
   - name: belt
@@ -2332,7 +2328,6 @@ ScriptedImporter:
     - {x: 24, y: 25}
     - {x: 25, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 599, y: 761}
     spritePosition: {x: 867, y: 970}
   - name: upperBoot_R
@@ -2737,7 +2732,6 @@ ScriptedImporter:
     - {x: 32, y: 33}
     - {x: 33, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 3821}
     spritePosition: {x: 777, y: 296}
   - name: leg_R
@@ -3171,7 +3165,6 @@ ScriptedImporter:
     - {x: 33, y: 34}
     - {x: 34, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 604}
     spritePosition: {x: 789, y: 201}
   - name: thigh_R
@@ -3486,7 +3479,6 @@ ScriptedImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 2378}
     spritePosition: {x: 886, y: 631}
   - name: pelvis
@@ -3803,7 +3795,6 @@ ScriptedImporter:
     - {x: 24, y: 25}
     - {x: 25, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 3579}
     spritePosition: {x: 877, y: 905}
   - name: ear
@@ -4703,7 +4694,6 @@ ScriptedImporter:
     - {x: 77, y: 78}
     - {x: 78, y: 72}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 194, y: 1395}
   - name: hairTop_R_side
@@ -5084,7 +5074,6 @@ ScriptedImporter:
     - {x: 29, y: 30}
     - {x: 30, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 3052}
     spritePosition: {x: 900, y: 1575}
   - name: hairTop_side
@@ -5368,7 +5357,6 @@ ScriptedImporter:
     - {x: 21, y: 22}
     - {x: 22, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 3978}
     spritePosition: {x: 959, y: 1673}
   - name: hairBack_01
@@ -5683,7 +5671,6 @@ ScriptedImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 2947}
     spritePosition: {x: 744, y: 1392}
   - name: eyebrows
@@ -5835,7 +5822,6 @@ ScriptedImporter:
     - {x: 9, y: 10}
     - {x: 10, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 517, y: 3978}
     spritePosition: {x: 1039, y: 1624}
   - name: head
@@ -6141,7 +6127,6 @@ ScriptedImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 2776}
     spritePosition: {x: 879, y: 1459}
   - name: tail
@@ -6544,7 +6529,6 @@ ScriptedImporter:
     - {x: 31, y: 32}
     - {x: 32, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 1826}
     spritePosition: {x: 774, y: 316}
   - name: upperBoot_L
@@ -6938,7 +6922,6 @@ ScriptedImporter:
     - {x: 31, y: 32}
     - {x: 32, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 599, y: 604}
     spritePosition: {x: 861, y: 305}
   - name: leg_L
@@ -7372,7 +7355,6 @@ ScriptedImporter:
     - {x: 33, y: 34}
     - {x: 34, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 1215}
     spritePosition: {x: 873, y: 210}
   - name: thigh_L
@@ -7698,7 +7680,6 @@ ScriptedImporter:
     - {x: 24, y: 25}
     - {x: 25, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 1950}
     spritePosition: {x: 921, y: 640}
   - name: neck
@@ -8011,7 +7992,6 @@ ScriptedImporter:
     - {x: 22, y: 23}
     - {x: 23, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 156, y: 1826}
     spritePosition: {x: 909, y: 1329}
   - name: hairBack_02
@@ -8326,7 +8306,6 @@ ScriptedImporter:
     - {x: 23, y: 24}
     - {x: 24, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 3285}
     spritePosition: {x: 825, y: 1418}
   - name: hairTop_B
@@ -8630,7 +8609,6 @@ ScriptedImporter:
     - {x: 22, y: 23}
     - {x: 23, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 156, y: 2084}
     spritePosition: {x: 981, y: 1585}
   - name: forearm_L
@@ -9097,7 +9075,6 @@ ScriptedImporter:
     - {x: 36, y: 37}
     - {x: 37, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 3703}
     spritePosition: {x: 860, y: 873}
   - name: Layer 10
@@ -9119,7 +9096,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 517, y: 4010}
     spritePosition: {x: 0, y: 2000}
   - name: arm_L
@@ -9522,7 +9498,6 @@ ScriptedImporter:
     - {x: 31, y: 32}
     - {x: 32, y: 0}
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 324, y: 948}
     spritePosition: {x: 866, y: 1157}
   characterData:
@@ -10007,6 +9982,7 @@ ScriptedImporter:
       order: 0
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -10014,10 +9990,12 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings:
   - name: Default
     overridden: 1
+    ignorePlatformSupport: 0
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -10029,6 +10007,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: iOS
     overridden: 1
+    ignorePlatformSupport: 0
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: 48
@@ -10040,6 +10019,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: Android
     overridden: 1
+    ignorePlatformSupport: 0
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: 48
@@ -10059,6 +10039,8 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   skeletonAssetReferenceID: 
+  padding: 4
+  spriteSizeExpand: 0
   spriteCategoryList:
     categories:
     - name: arm_R
@@ -10435,6 +10417,9 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 1
   textureAssetName: puppet_sara_var01 Texture
   prefabAssetName: puppet_sara_var01 Prefab
