@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10,13 +10,18 @@ Material:
   m_Name: Material_Particles_Fire_Unlit
   m_Shader: {fileID: -6465566751694194690, guid: 8bf17d58e716b4f44ab008cf368d5e54,
     type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -44,9 +49,24 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats: []
     m_Colors:
     - Color_207CF4A: {r: 0.13449706, g: 3.2111173, b: 2.2360137, a: 1}
     - Color_A070067B: {r: 0.0810846, g: 2.1532464, b: 1.4955604, a: 1}
     - Vector2_C110CB2: {r: -0.24, g: 0.12, b: 0, a: 0}
     - Vector2_D7EDBAAE: {r: 0.15, g: 1.15, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &5726285023963863179
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 7

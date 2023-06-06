@@ -21,11 +21,13 @@ ScriptedImporter:
     convertToNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
     isReadable: 0
     streamingMipmaps: 1
     streamingMipmapsPriority: 0
     vTOnly: 0
-    ignoreMasterTextureLimit: 0
+    ignoreMipmapLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
     spriteMode: 2
@@ -88,7 +90,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
     spritePosition: {x: 0, y: 0}
   mosaicSpriteImportData:
@@ -111,7 +112,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -160, y: 377}
     spritePosition: {x: 0, y: 0}
   - name: glow
@@ -133,7 +133,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -27, y: -28}
     spritePosition: {x: 0, y: 0}
   - name: stone_a
@@ -155,7 +154,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 218, y: 63}
     spritePosition: {x: 0, y: 0}
   - name: stone_b
@@ -177,7 +175,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -201, y: 593}
     spritePosition: {x: 0, y: 0}
   - name: stone_c
@@ -199,7 +196,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 65, y: 438}
     spritePosition: {x: 0, y: 0}
   - name: stone_d
@@ -221,7 +217,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 81, y: 906}
     spritePosition: {x: 0, y: 0}
   - name: stone_e
@@ -243,7 +238,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -40, y: 814}
     spritePosition: {x: 0, y: 0}
   - name: stone_f
@@ -265,7 +259,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 181, y: 330}
     spritePosition: {x: 0, y: 0}
   - name: stone_g
@@ -287,7 +280,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -240, y: 319}
     spritePosition: {x: 0, y: 0}
   - name: stone_h
@@ -309,7 +301,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 57, y: 552}
     spritePosition: {x: 0, y: 0}
   - name: stone_i
@@ -331,7 +322,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: -106, y: 377}
     spritePosition: {x: 0, y: 0}
   rigSpriteImportData:
@@ -354,7 +344,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 565}
     spritePosition: {x: 164, y: 188}
   - name: glow
@@ -376,7 +365,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 31, y: 32}
   - name: stone_a
@@ -398,7 +386,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 419, y: 428}
     spritePosition: {x: 201, y: 365}
   - name: stone_b
@@ -420,7 +407,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 153, y: 964}
     spritePosition: {x: 354, y: 371}
   - name: stone_c
@@ -442,7 +428,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 419, y: 513}
     spritePosition: {x: 354, y: 75}
   - name: stone_d
@@ -464,7 +449,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 216, y: 964}
     spritePosition: {x: 135, y: 58}
   - name: stone_e
@@ -486,7 +470,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 153, y: 864}
     spritePosition: {x: 193, y: 50}
   - name: stone_f
@@ -508,7 +491,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 237, y: 428}
     spritePosition: {x: 56, y: 98}
   - name: stone_g
@@ -530,7 +512,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 4, y: 428}
     spritePosition: {x: 244, y: 109}
   - name: stone_h
@@ -552,7 +533,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 153, y: 714}
     spritePosition: {x: 96, y: 162}
   - name: stone_i
@@ -574,7 +554,6 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    parentGroupIndex: -1
     uvTransform: {x: 153, y: 565}
     spritePosition: {x: 259, y: 188}
   characterData:
@@ -582,6 +561,7 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   sharedRigSpriteImportData: []
   sharedRigCharacterData:
@@ -589,10 +569,12 @@ ScriptedImporter:
     parts: []
     dimension: {x: 0, y: 0}
     characterGroups: []
+    pivot: {x: 0, y: 0}
     boneReadOnly: 0
   platformSettings:
   - name: Default
     overridden: 1
+    ignorePlatformSupport: 0
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -604,6 +586,7 @@ ScriptedImporter:
     androidETC2FallbackOverride: 0
   - name: iOS
     overridden: 1
+    ignorePlatformSupport: 0
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: 48
@@ -623,6 +606,8 @@ ScriptedImporter:
   paperDollMode: 0
   keepDupilcateSpriteName: 0
   skeletonAssetReferenceID: 
+  padding: 4
+  spriteSizeExpand: 0
   spriteCategoryList:
     categories: []
   spritePackingTag: 
@@ -851,6 +836,9 @@ ScriptedImporter:
     isVisible: 1
   sharedRigPSDLayers: []
   pSDLayerImportSetting: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  spriteSizeExpandChanged: 0
   generateGOHierarchy: 0
   textureAssetName: artefact Texture
   prefabAssetName: artefact Prefab
