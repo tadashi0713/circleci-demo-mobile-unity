@@ -9,7 +9,7 @@ jobs:
     executor:
       name: unity/ubuntu
       editor_version: 2021.3.26f1
-      resource_class: xlarge
+      resource_class: tadashi0713/container-agent-game
       target_platform: android
     steps:
       - checkout
@@ -70,15 +70,15 @@ workflows:
     jobs:
       - build-android:
           context: unity
-      - beta-android:
-          requires:
-            - build-android
-          context:
-            - mobile
-      - export-ios:
-          context: unity
-      - build-and-beta-ios:
-          requires:
-            - export-ios
-          context:
-            - mobile
+      # - beta-android:
+      #     requires:
+      #       - build-android
+      #     context:
+      #       - mobile
+      # - export-ios:
+      #     context: unity
+      # - build-and-beta-ios:
+      #     requires:
+      #       - export-ios
+      #     context:
+      #       - mobile
