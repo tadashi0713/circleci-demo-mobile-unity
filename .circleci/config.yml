@@ -6,10 +6,11 @@ orbs:
 
 jobs:
   build-android:
-    - image: 'unityci/editor:ubuntu-2021.3.26f1-android-1'
-      environment:
-        - GAMECI_EDITOR_VERSION=2021.3.26f1
-        - GAMECI_TARGET_PLATFORM=Android
+    docker:
+      - image: 'unityci/editor:ubuntu-2021.3.26f1-android-1'
+        environment:
+          - GAMECI_EDITOR_VERSION=2021.3.26f1
+          - GAMECI_TARGET_PLATFORM=Android
     resource_class: tadashi0713/container-runner-game
     steps:
       - checkout
