@@ -55,7 +55,7 @@ jobs:
 
   build-and-beta-ios:
     macos:
-      xcode: 14.2.0
+      xcode: 14.3.1
     resource_class: macos.m1.large.gen1
     steps:
       - checkout
