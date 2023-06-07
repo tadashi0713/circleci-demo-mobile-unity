@@ -11,7 +11,7 @@ jobs:
         environment:
           - GAMECI_EDITOR_VERSION=2021.3.26f1
           - GAMECI_TARGET_PLATFORM=Android
-    resource_class: tadashi0713/container-agent-game
+    resource_class: tadashi0713/container-agent-game-autopilot
     steps:
       - checkout
       - unity/prepare-env
