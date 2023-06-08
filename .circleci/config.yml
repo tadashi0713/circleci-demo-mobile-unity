@@ -11,7 +11,7 @@ jobs:
         environment:
           - GAMECI_EDITOR_VERSION=2021.3.26f1
           - GAMECI_TARGET_PLATFORM=Android
-    resource_class: tadashi0713/container-runner-game-autopilot
+    resource_class: tadashi0713/gameci-runner
     steps:
       - run:
           name: Add github.com to known hosts
