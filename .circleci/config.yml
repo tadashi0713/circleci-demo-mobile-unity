@@ -13,9 +13,6 @@ jobs:
           - GAMECI_TARGET_PLATFORM=Android
     resource_class: tadashi0713/gameci-container-runner
     steps:
-      - run:
-          name: Add github.com to known hosts
-          command: ssh-keyscan github.com >> ~/.ssh/known_hosts
       - checkout
       - unity/prepare-env
       - unity/build:
