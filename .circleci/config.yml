@@ -13,6 +13,9 @@ jobs:
           - GAMECI_TARGET_PLATFORM=Android
     resource_class: tadashi0713/gameci-container-runner
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "3b:61:fa:2c:7f:04:ab:53:9a:e3:7e:b3:ce:be:97:65"
       - checkout
       - unity/prepare-env
       - unity/build:
