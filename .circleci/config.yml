@@ -15,7 +15,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "3b:61:fa:2c:7f:04:ab:53:9a:e3:7e:b3:ce:be:97:65"
+            - "b6:16:ca:24:ef:be:11:ec:80:05:cb:a9:3a:06:0a:15"
       - checkout
       - unity/prepare-env
       - unity/build:
