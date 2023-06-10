@@ -6,26 +6,32 @@ orbs:
 
 jobs:
   build-android:
-    docker:
-      - image: 'unityci/editor:ubuntu-2021.3.26f1-android-1'
-        environment:
-          - GAMECI_EDITOR_VERSION=2021.3.26f1
-          - GAMECI_TARGET_PLATFORM=Android
-    resource_class: tadashi0713/gameci-container-runner
+    executor:
+      name: ruby/default
+      tag: 3.0.5
+      resource_class: tadashi0713/gameci-container-runner
     steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "b6:16:ca:24:ef:be:11:ec:80:05:cb:a9:3a:06:0a:15"
       - checkout
-      - unity/prepare-env
-      - unity/build:
-          build-target: Android
-          compress: false
-          store-artifacts: false
-      - persist_to_workspace:
-          root: .
-          paths:
-            - Builds/Android
+    # docker:
+    #   - image: 'unityci/editor:ubuntu-2021.3.26f1-android-1'
+    #     environment:
+    #       - GAMECI_EDITOR_VERSION=2021.3.26f1
+    #       - GAMECI_TARGET_PLATFORM=Android
+    # resource_class: tadashi0713/gameci-container-runner
+    # steps:
+    #   - add_ssh_keys:
+    #       fingerprints:
+    #         - "b6:16:ca:24:ef:be:11:ec:80:05:cb:a9:3a:06:0a:15"
+    #   - checkout
+    #   - unity/prepare-env
+    #   - unity/build:
+    #       build-target: Android
+    #       compress: false
+    #       store-artifacts: false
+    #   - persist_to_workspace:
+    #       root: .
+    #       paths:
+    #         - Builds/Android
 
   beta-android:
     executor:
