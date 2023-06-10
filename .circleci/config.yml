@@ -6,10 +6,9 @@ orbs:
 
 jobs:
   build-android:
-    executor:
-      name: ruby/default
-      tag: 3.0.5
-      resource_class: tadashi0713/gameci-container-runner
+    docker:
+      - image: cimg/ruby:3.0.5
+    resource-class: tadashi0713/gameci-container-runner
     steps:
       - checkout
     # docker:
