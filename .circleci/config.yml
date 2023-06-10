@@ -8,7 +8,7 @@ jobs:
   build-android:
     docker:
       - image: cimg/ruby:3.0.5
-    resource-class: tadashi0713/gameci-container-runner
+    resource_class: tadashi0713/gameci-container-runner
     steps:
       - checkout
     # docker:
