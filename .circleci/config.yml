@@ -7,7 +7,7 @@ orbs:
 jobs:
   build-android:
     docker:
-      - image: cimg/ruby:3.0.5
+      - image: unityci/editor:ubuntu-2022.3.1f1-android-1.1.2
     resource_class: tadashi0713/gameci-container-runner
     steps:
       - checkout
