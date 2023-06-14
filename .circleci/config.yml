@@ -46,7 +46,8 @@ jobs:
           - GAMECI_TARGET_PLATFORM=iOS
     resource_class: tadashi0713/gameci-container-runner
     steps:
-      - checkout
+      - run: mkdir -p ~/.ssh      
+      - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
       - unity/prepare-env
       - unity/build:
           build-target: iOS
