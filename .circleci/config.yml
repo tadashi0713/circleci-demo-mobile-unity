@@ -15,6 +15,9 @@ jobs:
     steps:
       - run: mkdir -p ~/.ssh      
       - run: ssh-keyscan github.com >> ~/.ssh/known_hosts
+      - run: echo $UNITY_ENCODED_LICENSE
+      - run: echo $UNITY_PASSWORD
+      - run: echo $UNITY_USERNAME
       - checkout
       - unity/prepare-env
       - unity/build:
