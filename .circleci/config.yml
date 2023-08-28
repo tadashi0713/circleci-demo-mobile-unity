@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   ruby: circleci/ruby@2.1.0
-  unity: game-ci/unity@1.4.0
+  unity: game-ci/unity@1.6.0
 
 jobs:
   build-android:
