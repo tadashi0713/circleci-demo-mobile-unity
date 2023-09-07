@@ -18,10 +18,7 @@ jobs:
           build-target: Android
           compress: false
           store-artifacts: false
-      - persist_to_workspace:
-          root: .
-          paths:
-            - Builds/Android
+          persist-to-workspace: true
 
   beta-android:
     executor:
@@ -48,10 +45,7 @@ jobs:
           build-target: iOS
           compress: false
           store-artifacts: false
-      - persist_to_workspace:
-          root: .
-          paths:
-            - Builds/iOS/iOS
+          persist-to-workspace: true
 
   build-and-beta-ios:
     macos:
