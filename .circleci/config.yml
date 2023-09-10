@@ -1,78 +1,10 @@
 version: 2.1
 
 orbs:
-  ruby: circleci/ruby@2.1.0
   unity: game-ci/unity@1.6.0
 
-jobs:
-  build-android:
-    executor:
-      name: unity/ubuntu
-      editor_version: 2021.3.26f1
-      resource_class: xlarge
-      target_platform: android
-    steps:
-      - checkout
-      - unity/prepare-env
-      - unity/build:
-          build-target: Android
-          compress: false
-          store-artifacts: false
-          persist-to-workspace: true
-
-  beta-android:
-    executor:
-      name: ruby/default
-      tag: 3.0.5
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - ruby/install-deps:
-          key: android
-      - run: bundle exec fastlane android beta
-
-  export-ios:
-    executor:
-      name: unity/ubuntu
-      editor_version: 2021.3.26f1
-      resource_class: xlarge
-      target_platform: ios
-    steps:
-      - checkout
-      - unity/prepare-env
-      - unity/build:
-          build-target: iOS
-          compress: false
-          store-artifacts: false
-          persist-to-workspace: true
-
-  build-and-beta-ios:
-    macos:
-      xcode: 14.3.1
-    resource_class: macos.m1.large.gen1
-    steps:
-      - checkout
-      - attach_workspace:
-          at: .
-      - ruby/install-deps:
-          key: ios
-      - run: bundle exec fastlane ios beta
-
 workflows:
-  build-unity-project:
+  create-unity-activation-file:
     jobs:
-      - build-android:
-          context: unity
-      - beta-android:
-          requires:
-            - build-android
-          context:
-            - mobile
-      - export-ios:
-          context: unity
-      - build-and-beta-ios:
-          requires:
-            - export-ios
-          context:
-            - mobile
+      - unity/create-activation-file:
+          editor_version: 2021.3.26f1
